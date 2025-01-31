@@ -12,13 +12,13 @@ type EmissionData struct {
 // selectQuery := `
 //         SELECT 
 //             emission_datas.id,
-//             emission_datas.activity_type,
-//             emission_datas.input_value,
-//             emission_datas.emission_factor,
-//             emission_datas.input_value * emission_datas.emission_factor AS total_emission
-//         FROM emission_datas
+//             emission_data.activity_type,
+//             emission_data.input_value,
+//             emission_data.emission_factor,
+//             emission_data.input_value * emission_data.emission_factor AS total_emission
+//         FROM emission_data
 // `
 
 // updateQuery := `
-//             UPDATE emission_datas SET total_emission = input_value * emission_datas.emission_factor
+//             UPDATE emission_data SET total_emission = input_value * emission_datas.emission_factor
 // `
